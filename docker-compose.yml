@@ -1,0 +1,29 @@
+version: '2'
+services:
+  notebook-nfldb:
+    image: notebook-nfldb
+    environment:
+      - PGHOST=postgresql-nfldb
+      - PGPORT=5432
+      - PGUSER=nfldb
+      - PGPASSWORD=go_cowboys
+    ports:
+      - "8888:8888"
+    user: root
+    volumes:
+      - ./notebook-nfldb/notebooks:/home/jovyan/work
+  postgresql-nfldb:
+    image: postgresql-nfldb
+    ports:
+      - "5432:5432"
+    volumes:
+      - /var/lib/postgresql/data
+  phppgadmin:
+    image: einfallstoll/phppgadmin
+    environment:
+      - POSTGRES_HOST=postgresql-nfldb
+      - POSTGRES_PORT=5432
+      - POSTGRES_DEFAULTDB=nfldb
+    ports:
+      - "8080:80"
+      - "8443:443"
