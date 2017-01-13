@@ -1,9 +1,9 @@
 version: '2'
 services:
   nfldb-jpy:
-    image: nfldb-jpy
+    image: kakashi20/nfldb-jpy
     environment:
-      - PGHOST=kakashi20/nfldb-pgsql
+      - PGHOST=nfldb-pgsql
       - PGPORT=5432
       - PGUSER=nfldb
       - PGPASSWORD=go_cowboys
@@ -11,7 +11,7 @@ services:
       - "8888:8888"
     user: root
     volumes:
-      - ./notebook-nfldb/notebooks:/home/jovyan/work
+      - ./nfldb-jpy/notebooks:/home/jovyan/work
   nfldb-pgsql:
     image: kakashi20/nfldb-pgsql
     ports:
