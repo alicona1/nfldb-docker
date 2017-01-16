@@ -89,7 +89,8 @@ After finishing these scripts go back to the home screen and click Test nfldb.ip
 ![Test nfldb](screenshots/test-nfldb.png)
 
 Notes
-* This docker-compose puts the postgres database into a docker volume that gets delete if you run the command: `$ docker-compose down` If you want to save it to a directory you have to map a directory to the volume in docker-compose.yml. See the jupyter notebook volumes in docker-compose.yml for an example.
+* This docker-compose puts the postgres database into a docker volume that gets deleted if you run the command: `$ docker-compose down` If you want to save it to a directory you have to map a directory to the volume in docker-compose.yml. See the jupyter notebook volumes in docker-compose.yml for an example.
+* You can stop the containers with `$ docker-compose stop` and start them with `$ docker-compose start`. Just make sure you're in the same directory as the docker-compose.yml file.
 
 ## Acknowledgments
 
