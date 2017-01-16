@@ -10,11 +10,11 @@ These instructions will get you a copy of the project up and running on your mac
 
 You will need to have docker installed onto your local computer or running on a server. The Docker containers should handle the rest of the requirements for nfldb.
 
-```
-[Docker for Mac](https://docs.docker.com/docker-for-mac/)
-[Docker for Windows](https://docs.docker.com/docker-for-windows/)
-[Docker for Linux](https://docs.docker.com/engine/installation/linux/)
-```
+
+* [Docker for Mac](https://docs.docker.com/docker-for-mac/)
+* [Docker for Windows](https://docs.docker.com/docker-for-windows/)
+* [Docker for Linux](https://docs.docker.com/engine/installation/linux/)
+
 
 ### Installing
 
