@@ -88,7 +88,8 @@ These cells will start running and you will see the * next to the cells turn int
 After finishing these scripts go back to the home screen and click Test nfldb.ipynb. This is a notebook with actual python in it. You can execute each cell individually to help with trouble shooting. The keyboard shortcut to execute a cell is Ctrl + Enter
 ![Test nfldb](screenshots/test-nfldb.png)
 
-
+Notes
+* This docker-compose puts the postgres database into a docker volume that gets delete if you run the command: `$ docker-compose down` If you want to save it to a directory you have to map a directory to the volume in docker-compose.yml. See the jupyter notebook volumes in docker-compose.yml for an example.
 
 ## Acknowledgments
 
