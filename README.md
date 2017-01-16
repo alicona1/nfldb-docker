@@ -87,7 +87,7 @@ These cells will start running and you will see the * next to the cells turn int
 ![Update nfldb script output](screenshots/update-nfldb-2.png)
 
 After finishing these scripts go back to the home screen and click Test nfldb.ipynb. This is a notebook with actual python in it. You can execute each cell individually to help with trouble shooting. The keyboard shortcut to execute a cell is Ctrl + Enter
-![Test nfldb](screenshots/test-nfldb-2.png)
+![Test nfldb](screenshots/test-nfldb.png)
 
 
 
