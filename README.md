@@ -64,7 +64,6 @@ We want to copy the name of the jupyter container (ex. nfldbdocker_nfldb-jpy_1) 
 
 ```
 $ docker logs nfldbdocker_nfldb-jpy_1
-
 ```
 
 ```
@@ -80,7 +79,7 @@ $ docker logs nfldbdocker_nfldb-jpy_1
 Go to the URL and you should get this page.
 ![Jupyter Home](screenshots/jupyter-home.png)
 
-Click on Update nfldb.ipynb and click the Cell menu and select Run cells
+Click on Update nfldb.ipynb then click the Cell menu and select Run All
 ![Update nfldb scripts](screenshots/update-nfldb-1.png)
 
 These cells will start running and you will see the * next to the cells turn into numbers when they finish running. (Note: The ! in front of the commands are shell commands, so this notebook is just running the existing python scripts in a jupyter notebook. The other notebook really shows you the power of jupyter notebooks.)
