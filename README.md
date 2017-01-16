@@ -32,7 +32,7 @@ $ cd nfldb-docker
 $ docker-compose up -d  && docker-compose logs -f
 ```
 
-When the scripts finish you should see somthing like this
+When the scripts finish you should see something like this
 
 ```
 nfldb-pgsql_1       | PostgreSQL init process complete; ready for start up.
