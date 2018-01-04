@@ -21,7 +21,7 @@ services:
   nfldb-phppgadmin:
     image: einfallstoll/phppgadmin
     environment:
-      - POSTGRES_HOST=pnfldb-pgsql
+      - POSTGRES_HOST=nfldb-pgsql
       - POSTGRES_PORT=5432
       - POSTGRES_DEFAULTDB=nfldb
     ports:
